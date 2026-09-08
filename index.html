@@ -4,72 +4,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ookini</title>
+    <meta name="description"
+        content="Ookini — café de especialidad preparado con métodos japoneses lentos. V60, Kyoto drip, siphon y prensa francesa en Barcelona.">
+    <meta name="theme-color" content="#fdf0d5">
+    <title>Ookini · Café de especialidad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
-        <h1>Ookini</h1>
-        <h2>Café de especialidad</h2>
-        <nav>
+    <header class="site-header" id="top">
+        <a href="#top" class="brand">
+            <span class="brand-mark">Oo<em>ki</em>ni</span>
+        </a>
+        <nav class="site-nav">
+            <a href="#metodos">Métodos</a>
             <a href="#nosotros">Nosotros</a>
-            <a href="#metodos">Metodos</a>
+            <a href="#reservas">Reservar</a>
             <a href="#contacto">Contacto</a>
         </nav>
     </header>
 
     <main>
-        <section id="metodos">
-            <h2>Bienvenido a Ookini</h2>
-            <p>Ookini significa gracias en Kansai, la región donde nació el método Kyoto drip. Servimos café de
-                especialidad
-                preparado con métodos lentos y con la atención que el grano merece.
-                Nuestro concepto es que nuestros huespedes tenga una experiencia unica y inolvidables, descubriendo
-                juntos una de las formas
-                japonesas de beber cafe. Atendemos nuestros huespedes con pasion, alegria y profesionalidad.</p>
-            <h2>Métodos de preparación</h2>
-            <h3 class="metodo-titulo">V60</h3>
-            <p>Filtrado por goteo con molienda media. El agua cae despacio sobre el café durante tres minutos y arrastra
-                notas
-                limpias y brillantes. Es el método más versátil de la barra y el mejor para descubrir la personalidad de
-                un
-                grano nuevo. <span class="precio">4€</span></p>
-            <h3 class="metodo-titulo">Kyoto drip</h3>
-            <p>Extracción en frío gota a gota durante ocho horas. Molienda media gruesa, agua a temperatura ambiente,
-                paciencia
-                japonesa. El resultado es un café denso, dulce y con muy poca acidez. Lo dejamos preparándose desde la
-                noche
-                anterior. <span class="precio">7€</span></p>
-            <h3 class="metodo-titulo">Siphon japones</h3>
-            <p>Método de vacío con molienda media fina. El agua sube por presión, se mezcla con el café durante un
-                minuto, y
-                baja filtrada cuando se apaga la llama. Tarda cuatro minutos en total y produce una taza limpia y
-                aromática. <span class="precio">5€</span></p>
-            <h3 class="metodo-titulo">Prensa francesa</h3>
-            <p>Inmersión total con molienda gruesa durante cuatro minutos. Sin filtro de papel, los aceites del café
-                pasan a la
-                taza y construyen un cuerpo redondo y robusto. Es nuestro único método sin reserva, listo apenas lo
-                pides. <span class="precio">4€</span></p>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Café de especialidad · Barcelona</p>
+                <h1 class="hero-title">El tiempo no es un<br><span>inconveniente</span></h1>
+                <p class="hero-lead">
+                    <strong>Ookini</strong> significa <em>gracias</em> en Kansai, la región donde nació el Kyoto drip.
+                    Servimos café preparado con métodos lentos y con la atención que el grano merece.
+                </p>
+                <div class="hero-actions">
+                    <a href="#reservas" class="btn btn-primary">Reservar una taza</a>
+                    <a href="#metodos" class="btn btn-ghost">Ver métodos</a>
+                </div>
+                <ul class="hero-stats">
+                    <li><span>50</span>tazas al día</li>
+                    <li><span>4</span>métodos de barra</li>
+                    <li><span>8 h</span>de Kyoto drip</li>
+                </ul>
+            </div>
+            <figure class="hero-media">
+                <img src="ookini-barra.png" alt="La barra de Ookini con métodos de café de especialidad" width="720"
+                    height="720">
+                <figcaption>Nuestra barra · Chapinero</figcaption>
+            </figure>
         </section>
-        <section id="nosotros">
-            <h2>Quien somos</h2>
-            <p>Somos un equipo joven y motivado, durante varios viaje en japon nos enamoramo de la cultura de hokkaido y
-                como la gente vive el cafe, y no se trata del cafe en sin sino de las emociones y de los momentos que
-                nos quedan. Queremos traer aqui y a nuestros huespedes todas esas emociones y recuerdos.</p>
+
+        <!-- INTRO / BIENVENIDA -->
+        <section class="intro" id="bienvenida">
+            <figure class="intro-media reveal">
+                <img src="images/granos.png" alt="Granos de café de especialidad recién tostados" width="600"
+                    height="600" loading="lazy">
+            </figure>
+            <div class="intro-copy reveal">
+                <p class="eyebrow">Bienvenido a Ookini</p>
+                <h2>Una forma japonesa de beber café</h2>
+                <p>Queremos que nuestros huéspedes tengan una experiencia única e inolvidable, descubriendo juntos una
+                    de las formas japonesas de beber café. Atendemos con pasión, alegría y profesionalidad.</p>
+                <p>Cada taza es un ritual: la molienda, el agua, la paciencia. Elaboramos un máximo de 50 tazas al día
+                    para garantizar la máxima calidad.</p>
+            </div>
         </section>
-        <section id="reservas">
-            <p>Tazas disponibles hoy: <span id="contador-tazas">50</span></p>
-            <button id="boton-reservar">Reservar una taza</button>
+
+        <!-- MÉTODOS -->
+        <section class="metodos" id="metodos">
+            <div class="section-head reveal">
+                <p class="eyebrow">La carta</p>
+                <h2>Métodos de preparación</h2>
+                <p class="section-sub">Cuatro caminos distintos para un mismo grano. Elige el tuyo.</p>
+            </div>
+
+            <div class="metodo-grid">
+                <article class="metodo-card reveal">
+                    <div class="metodo-img">
+                        <img src="images/metodo-v60.png" alt="Preparación de café en V60" width="600" height="450"
+                            loading="lazy">
+                        <span class="precio-tag">4€</span>
+                    </div>
+                    <div class="metodo-body">
+                        <h3 class="metodo-titulo">V60</h3>
+                        <p>Filtrado por goteo con molienda media. El agua cae despacio durante tres minutos y arrastra
+                            notas limpias y brillantes. El método más versátil para descubrir la personalidad de un grano
+                            nuevo.</p>
+                        <span class="metodo-meta">≈ 3 min · Al momento</span>
+                    </div>
+                </article>
+
+                <article class="metodo-card reveal">
+                    <div class="metodo-img">
+                        <img src="images/metodo-kyoto.png" alt="Torre de Kyoto drip goteando café en frío" width="600"
+                            height="450" loading="lazy">
+                        <span class="precio-tag">7€</span>
+                    </div>
+                    <div class="metodo-body">
+                        <h3 class="metodo-titulo">Kyoto drip</h3>
+                        <p>Extracción en frío gota a gota durante ocho horas. Molienda media gruesa, agua a temperatura
+                            ambiente, paciencia japonesa. Un café denso, dulce y con muy poca acidez.</p>
+                        <span class="metodo-meta">≈ 8 h · Bajo reserva</span>
+                    </div>
+                </article>
+
+                <article class="metodo-card reveal">
+                    <div class="metodo-img">
+                        <img src="images/metodo-siphon.png" alt="Siphon japonés preparando café al vacío" width="600"
+                            height="450" loading="lazy">
+                        <span class="precio-tag">5€</span>
+                    </div>
+                    <div class="metodo-body">
+                        <h3 class="metodo-titulo">Siphon japonés</h3>
+                        <p>Método de vacío con molienda media fina. El agua sube por presión, se mezcla un minuto con el
+                            café y baja filtrada al apagar la llama. Una taza limpia y aromática.</p>
+                        <span class="metodo-meta">≈ 4 min · Al momento</span>
+                    </div>
+                </article>
+
+                <article class="metodo-card reveal">
+                    <div class="metodo-img">
+                        <img src="images/metodo-prensa.png" alt="Prensa francesa con café recién hecho" width="600"
+                            height="450" loading="lazy">
+                        <span class="precio-tag">4€</span>
+                    </div>
+                    <div class="metodo-body">
+                        <h3 class="metodo-titulo">Prensa francesa</h3>
+                        <p>Inmersión total con molienda gruesa durante cuatro minutos. Sin filtro de papel, los aceites
+                            del café construyen un cuerpo redondo y robusto. Nuestro único método sin reserva.</p>
+                        <span class="metodo-meta">≈ 4 min · Al momento</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- NOSOTROS -->
+        <section class="nosotros" id="nosotros">
+            <figure class="nosotros-media reveal">
+                <img src="images/nosotros.png" alt="El equipo de Ookini preparando café" width="720" height="720"
+                    loading="lazy">
+            </figure>
+            <div class="nosotros-copy reveal">
+                <p class="eyebrow">Quiénes somos</p>
+                <h2>Emociones que nos quedan</h2>
+                <p>Somos un equipo joven y motivado. Durante varios viajes a Japón nos enamoramos de la cultura de
+                    Hokkaido y de cómo la gente vive el café. No se trata solo del café, sino de las emociones y de los
+                    momentos que nos quedan.</p>
+                <p>Queremos traer aquí, a nuestros huéspedes, todas esas emociones y recuerdos.</p>
+                <blockquote>«Máte-do Kyoto: el tiempo no es un inconveniente.»</blockquote>
+            </div>
+        </section>
+
+        <!-- RESERVAS -->
+        <section class="reservas" id="reservas">
+            <div class="reservas-card reveal">
+                <p class="eyebrow eyebrow-light">Disponibilidad de hoy</p>
+                <h2>Reserva tu taza</h2>
+                <p class="reservas-sub">Elaboramos un máximo de 50 tazas al día para cuidar cada extracción.</p>
+                <div class="contador-wrap">
+                    <span id="contador-tazas">50</span>
+                    <span class="contador-label">tazas disponibles</span>
+                </div>
+                <button id="boton-reservar" class="btn btn-primary btn-lg">Reservar una taza</button>
+                <p class="reservas-nota" id="reservas-nota">Sin compromiso · Confirmamos por WhatsApp</p>
+            </div>
         </section>
     </main>
-    <footer id="contacto">
-        <img src="ookini-barra.png" alt="Barrra de ookini, tu cafe de especialidad" width="250">
-        <p>Abierto todos los dias desde 8 a.m hasta 8 p.m</p>
-        <p>Calle Barcelona 14, Spain.</p>
-    </footer>
-    <script src="script.js"></script>
 
+    <footer class="site-footer" id="contacto">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <span class="brand-mark">Oo<em>ki</em>ni</span>
+                <p>Café de especialidad preparado con métodos lentos y paciencia japonesa.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Horario</h4>
+                <p>Todos los días</p>
+                <p>8:00 – 20:00</p>
+            </div>
+            <div class="footer-col">
+                <h4>Dónde estamos</h4>
+                <p>Calle Barcelona 14</p>
+                <p>Barcelona, España</p>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p><a href="mailto:hola@ookini.cafe">hola@ookini.cafe</a></p>
+                <p><a href="tel:+34600000000">+34 600 000 000</a></p>
+            </div>
+        </div>
+        <p class="footer-bottom">© <span id="anio"></span> Ookini · Gracias por tu visita</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
